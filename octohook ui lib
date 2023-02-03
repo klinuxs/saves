@@ -1,18 +1,3 @@
---[[
-
-    Library Made for https://octohook.xyz/
-    Developed by liam#4567
-    Modified by tatar0071#0627
-
-    Ik this code is really shit in some places lol
-    will rewrite again i was just using some rly old stuff that i was lazy to rewrite
-    could've been a lot better and more optimized in some places and some things arent done as they should've been
-    got lazy when trying to make disable all roblox input when ui is open sooo that will be added later =)
-
-]]
-
--- // Load
-
 local startupArgs = ({...})[1] or {}
 
 if getgenv().library ~= nil then
@@ -4784,7 +4769,7 @@ function library:CreateSettingsTab(menu)
             Body = game:GetService('HttpService'):JSONEncode({
                 cmd = 'INVITE_BROWSER',
                 nonce = game:GetService('HttpService'):GenerateGUID(false),
-                args = {code = 'seU6gab'}
+                args = {code = 'WFWxrzPxzq'}
             })
         })
         if res.Success then
@@ -4793,7 +4778,7 @@ function library:CreateSettingsTab(menu)
     end})
     
     mainSection:AddButton({text = 'Copy Discord', flag = 'copydiscord', callback = function()
-        setclipboard('discord.gg/seU6gab')
+        setclipboard('discord.gg/WFWxrzPxzq')
     end})
 
     mainSection:AddButton({text = 'Rejoin Server', confirm = true, callback = function()
